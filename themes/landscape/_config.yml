@@ -1,7 +1,10 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
+  Professor: /professor
+  Research: /research
+  Member: /member
+  Project: /project
 rss: /
 
 # Content
