@@ -2,11 +2,7 @@
 <body>
   <div id="container">
     <div id="wrap">
-		<% if( !page.layout ) { %>
-      <%- partial('_partial/header2', null, {cache: !config.relative_link}) %>
-    <% } else { %>
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-		<% } %>
       <div class="outer">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
