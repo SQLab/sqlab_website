@@ -394,3 +394,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+.member{
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
