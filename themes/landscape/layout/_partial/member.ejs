@@ -1,0 +1,13 @@
+<article class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <% site.posts.each(function(post){ %>
+      <% if (post.label == 'member'){ %>
+      <div class="member">
+        <%- post.content %>
+      </div>
+      <% } %>
+  <% }) %>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+</article>
+
