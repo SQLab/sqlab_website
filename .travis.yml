@@ -1,0 +1,32 @@
+language: node_js
+
+node_js:
+  - "0.12"
+before_install:
+  # Decrypt the private key
+  - openssl aes-256-cbc -K $encrypted_e4b94b4d5568_key -iv $encrypted_e4b94b4d5568_iv -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
+  # Set the permission of the key
+  - chmod 600 ~/.ssh/id_rsa
+  # Start SSH agent
+  - eval $(ssh-agent)
+  # Add the private key to the system
+  - ssh-add ~/.ssh/id_rsa
+  # Copy SSH config
+  - cp .travis/ssh_config ~/.ssh/config
+  # Set Git config
+  - git config --global user.name "bananaappletw"
+  - git config --global user.email webberapple@gmail.com
+  # Install Hexo
+  - npm install hexo@beta -g
+  # Clone the repository
+  - git clone https://github.com/sqlab/sqlab.github.io .deploy
+
+script:
+  - hexo generate
+  - hexo deploy
+
+branches:
+  only:
+    - master
+
+
