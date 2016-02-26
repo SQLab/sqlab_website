@@ -70,4 +70,3 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:SQLab/SQLab.github.io.git
-

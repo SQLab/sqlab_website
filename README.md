@@ -11,3 +11,8 @@ See it on http://0.0.0.0:4000/
 hexo new member [name]
 ```
 Modify content at sqlab_website/source/_post/[name]
+```
+name: name
+email: email
+github: github
+```

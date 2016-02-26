@@ -1,6 +1,6 @@
 title: apple
 label: member
+email: #
+github: #
 tags:
 ---
-Ok I am apple.
-

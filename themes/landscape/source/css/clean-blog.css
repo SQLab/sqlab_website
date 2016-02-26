@@ -395,10 +395,29 @@ body {
 }
 .member{
   float: left;
-  width: 200px;
-  height: 200px;
+  position:relative;
+  width: 180px;
+  height: 300px;
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
   border: 2px solid black;
+}
+.member_photo{
+}
+.member_description{
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: auto;
+  width: 140px;
+}
+.member_links{
+  position: absolute;
+  bottom: 20px;
+  left: auto;
+  right: auto;
+  margin: auto;
+  width: 140px;
+  height: 53px;
 }
