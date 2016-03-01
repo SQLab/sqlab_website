@@ -1,22 +1,22 @@
 <article class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <% var age=0 %>
   <% site.posts.sort('age').each(function(post){ %>
-      <% if (post.label == 'member'){ %>
-        <% if (post.age != age){ 
-           if (age != 0){ %>
-            <div class="clearfix">
-            </div>
-          <% } %>
-          <% age = post.age 
-           if (age == 104){ %>
-              <h1>碩一</h1>
-          <% } 
-           else if (age == 103){ %>
-              <h1>碩二</h1>
-          <% } 
-           else { %>
-              <h1>畢業學長姊</h1>
-          <% } %>
+      <% if (post.label == 'member'){
+           if (post.age != age){ 
+             if (age != 0){ %>
+              <div class="clearfix">
+              </div>
+            <% }
+             age = post.age 
+             if (age == 104){ %>
+                <h1>碩一</h1>
+            <% } 
+             else if (age == 103){ %>
+                <h1>碩二</h1>
+            <% } 
+             else { %>
+                <h1>畢業學長姊</h1>
+            <% } %>
         <% } %>
           <div class="member">
             <div class="member_photo">
@@ -28,7 +28,7 @@
             <div class="member_links">
             <ul class="list-inline text-center">
               <li>
-                <a href="<%= post.email %>">
+                <a href="mailto:<%= post.email %>">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
