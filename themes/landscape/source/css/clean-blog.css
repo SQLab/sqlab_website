@@ -446,6 +446,7 @@ body {
 .member_description{
   font-family: Georgia, serif;
   font-size: 22px;
+  color: white;
   font-weight: bold;
   text-align: center;
   width: 140px;
