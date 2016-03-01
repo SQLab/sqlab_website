@@ -7,22 +7,13 @@
 			<% if (page.layout!="page"){ %>
 			<!-- Page Header -->
 			<!-- Set your background image for this header on the line below. -->
-			<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-					<div class="container">
-							<div class="row">
-									<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-											<div class="site-heading">
-												<h1><%= config.title %></h1>
-												<% if (theme.subtitle){ %>
-												<hr class="small">
-												<span class="subheading">
-													<a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
-												</span>
-												<% } %>
-											</div>
-									</div>
-							</div>
-					</div>
+			<header class="intro-header" style="background-image: url('/img/home-bg.jpg');background-repeat: no-repeat;height: 800px">
+              <div class="site-heading">
+                <h1><%= config.title %></h1>
+                <% if (theme.subtitle){ %>
+                  <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+                <% } %>
+              </div>
 			</header>
 			<% } %>
 
