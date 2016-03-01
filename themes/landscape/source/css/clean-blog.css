@@ -398,18 +398,26 @@ body {
   position:relative;
   width: 180px;
   height: 300px;
-  padding: 20px;
+  padding: 19px;
   margin: 20px;
   border-radius: 20px;
   border: 2px solid black;
 }
 .member_photo{
+  width: 140px;
+  height: 160px;
+}
+.member_photo p{
+  margin: 0px;
+}
+.member_photo img{
+  border-radius: 10px;
 }
 .member_description{
-  position: absolute;
-  top: 20px;
-  left: auto;
-  right: auto;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
   width: 140px;
 }
 .member_links{

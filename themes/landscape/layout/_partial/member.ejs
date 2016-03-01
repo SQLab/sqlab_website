@@ -2,9 +2,11 @@
   <% site.posts.each(function(post){ %>
       <% if (post.label == 'member'){ %>
       <div class="member">
+        <div class="member_photo">
+          <%- post.content %>
+        </div>
         <div class="member_description">
-        <%- post.title %>
-        <%- post.content %>
+          <%- post.title %>
         </div>
         <div class="member_links">
         <ul class="list-inline text-center">
