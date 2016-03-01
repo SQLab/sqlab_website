@@ -407,7 +407,7 @@ body {
 }
 .member_photo{
   width: 140px;
-  height: 160px;
+  height: 170px;
 
 }
 .member_photo p{
@@ -417,6 +417,8 @@ body {
   position: center;
   border-radius: 10px;
   border: 1px solid black;
+  width: 140px;
+  height: 170px;
 }
 .member_description{
   font-family: Georgia, serif;
@@ -434,6 +436,12 @@ body {
   margin: auto;
   width: 140px;
   height: 53px;
+}
+.member_links ul{
+  margin-left: 5px;
+}
+.member_links ul{
+  margin-right: 5px;
 }
 .member_links>ul>li:first-child{
   float: left;
