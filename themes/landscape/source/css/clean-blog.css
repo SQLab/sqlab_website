@@ -394,7 +394,7 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 .member{
-  background-image: url('http://i.stack.imgur.com/jGlzr.png');
+  background-image: url('images/banner.jpg');
   float: left;
   position:relative;
   width: 180px;
@@ -404,6 +404,9 @@ body {
   border-radius: 20px;
   border: 2px solid black;
   box-shadow: 6px 6px 3px #888888;
+}
+.member:hover{
+  transform: scale(1.1); 
 }
 .member_photo{
   width: 140px;
