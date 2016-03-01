@@ -1,7 +1,0 @@
-title: test
-label: member
-age: 104
-email:
-github:
-tags:
----
