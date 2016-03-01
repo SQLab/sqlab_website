@@ -1,34 +1,51 @@
 <article class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <% site.posts.each(function(post){ %>
+  <% var age=0 %>
+  <% site.posts.sort('age').each(function(post){ %>
       <% if (post.label == 'member'){ %>
-      <div class="member">
-        <div class="member_photo">
-          <%- post.content %>
-        </div>
-        <div class="member_description">
-          <%- post.title %>
-        </div>
-        <div class="member_links">
-        <ul class="list-inline text-center">
-          <li>
-            <a href="<%= post.email %>">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="<%= post.github %>">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-        </div>
-      </div>
+        <% if (post.age != age){ 
+           if (age != 0){ %>
+            <div class="clearfix">
+            </div>
+          <% } %>
+          <% age = post.age 
+           if (age == 104){ %>
+              <h1>碩一</h1>
+          <% } 
+           else if (age == 103){ %>
+              <h1>碩二</h1>
+          <% } 
+           else { %>
+              <h1>畢業學長姊</h1>
+          <% } %>
+        <% } %>
+          <div class="member">
+            <div class="member_photo">
+              <%- post.content %>
+            </div>
+            <div class="member_description">
+              <%- post.title %>
+            </div>
+            <div class="member_links">
+            <ul class="list-inline text-center">
+              <li>
+                <a href="<%= post.email %>">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="<%= post.github %>">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
       <% } %>
   <% }) %>
   <% if (!index){ %>
