@@ -394,6 +394,7 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 .member{
+  background-image: url('http://i.stack.imgur.com/jGlzr.png');
   float: left;
   position:relative;
   width: 180px;
@@ -402,16 +403,20 @@ body {
   margin: 20px;
   border-radius: 20px;
   border: 2px solid black;
+  box-shadow: 6px 6px 3px #888888;
 }
 .member_photo{
   width: 140px;
   height: 160px;
+
 }
 .member_photo p{
   margin: 0px;
 }
 .member_photo img{
+  position: center;
   border-radius: 10px;
+  border: 1px solid black;
 }
 .member_description{
   font-family: Georgia, serif;
@@ -421,6 +426,7 @@ body {
   width: 140px;
 }
 .member_links{
+  border-radius: 10px;
   position: absolute;
   bottom: 20px;
   left: auto;
@@ -428,4 +434,10 @@ body {
   margin: auto;
   width: 140px;
   height: 53px;
+}
+.member_links>ul>li:first-child{
+  float: left;
+}
+.member_links>ul>li:last-child{
+  float: right;
 }
