@@ -1,21 +1,19 @@
 <article class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <% var age=0 %>
+  <h1>畢業學長姊</h1>
   <% site.posts.sort('age').each(function(post){ %>
       <% if (post.label == 'member'){
-           if (post.age != age){ 
-             if (age != 0){ %>
+           if (post.age != age ){ 
+             if (age != 0 && post.age > 102){ %>
               <div class="clearfix">
               </div>
             <% }
              age = post.age 
-             if (age == 104){ %>
-                <h1>碩一</h1>
-            <% } 
-             else if (age == 103){ %>
+             if (age == 103){ %>
                 <h1>碩二</h1>
             <% } 
-             else { %>
-                <h1>畢業學長姊</h1>
+             else if (age == 104){ %>
+                <h1>碩一</h1>
             <% } %>
         <% } %>
           <div class="member">
