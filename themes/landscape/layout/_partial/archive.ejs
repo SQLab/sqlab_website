@@ -2,9 +2,7 @@
 
 <% if (pagination == 2){ %>
   <% page.posts.each(function(post){ %>
-    <% if (post.label != 'member'){ %>
-      <%- partial('article', {post: post, index: true}) %>
-    <% } %>
+	<%- partial('article', {post: post, index: true}) %>
   <% }) %>
   <% if (page.total > 1){ %>
     <nav id="page-nav">
@@ -14,6 +12,7 @@
       }) %>
     </nav>
   <% } %>
+<% } else if (pagination == 0){ %>
 <% } else { %>
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
