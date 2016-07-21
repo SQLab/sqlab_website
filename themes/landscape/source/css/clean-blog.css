@@ -473,3 +473,10 @@ body {
 .member_links>ul>li:last-child{
   float: right;
 }
+
+.professor-photo{
+  float: right;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
