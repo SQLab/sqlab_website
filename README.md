@@ -1,4 +1,5 @@
 # sqlab_website
+[![Build Status](https://travis-ci.org/SQLab/sqlab_website.svg?branch=master)](https://travis-ci.org/SQLab/sqlab_website)
 ```
 git clone https://github.com/SQLab/sqlab_website
 cd sqlab_website/
